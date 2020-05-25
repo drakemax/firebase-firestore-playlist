@@ -1,39 +1,37 @@
 <html>
-    <head>
-        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cloud Cafe</h1>
 
-        <h1>Cloud Cafe</h1>
+    <div class="content">
+      <form id="add-cafe-form">
+        <input type="text" name="name" placeholder="Cafe name" />
+        <input type="text" name="city" placeholder="Cafe city" />
+        <button>Add Cafe</button>
+      </form>
 
-        <div class="content">
+      <ul id="cafe-list"></ul>
+    </div>
 
-            <form id="add-cafe-form">
-                <input type="text" name="name" placeholder="Cafe name">
-                <input type="text" name="city" placeholder="Cafe city">
-                <button>Add Cafe</button>
-            </form>
-
-            <ul id="cafe-list"></ul>
-
-        </div>
-
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyBrItE-kYM4dU0kaft7WYjb3749lCv42uA",
-                authDomain: "ninja-firestore.firebaseapp.com",
-                databaseURL: "https://ninja-firestore.firebaseio.com",
-                projectId: "ninja-firestore",
-                storageBucket: "ninja-firestore.appspot.com",
-                messagingSenderId: "176079657618"
-            };
-            firebase.initializeApp(config);
-            const db = firebase.firestore();
-            db.settings({ timestampsInSnapshots: true }); 
-        </script>
-        <script src="app.js"></script>
-    </body>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCGREPzHnhhI0LzVFYOmVcThrKRSetWodc",
+        authDomain: "cafeapp-22a94.firebaseapp.com",
+        databaseURL: "https://cafeapp-22a94.firebaseio.com",
+        projectId: "cafeapp-22a94",
+        storageBucket: "cafeapp-22a94.appspot.com",
+        messagingSenderId: "121412412925",
+        appId: "1:121412412925:web:8be05f369994ba61ac2594",
+      };
+      firebase.initializeApp(config);
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script src="app.js"></script>
+  </body>
 </html>

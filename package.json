@@ -1,0 +1,19 @@
+{
+  "name": "firebase-firestore-playlist",
+  "version": "1.0.0",
+  "description": "All course files for the Firebase Firestore playlist on The Net Ninja YouTube channel.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drakemax/firebase-firestore-playlist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drakemax/firebase-firestore-playlist/issues"
+  },
+  "homepage": "https://github.com/drakemax/firebase-firestore-playlist#readme"
+}
